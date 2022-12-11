@@ -5,7 +5,8 @@ This project contains two python notebook files for initial analysis where we lo
 LA county data from https://www.kaggle.com/dsv/3286750 to get insights on the accident trends in two cities of different population and weather features.
 The results are saved in the directory Results.
 
-1. Initial Analysis
+I. Initial Analysis :
+
 initial_trend_analysis.ipynb
 
 This code answers the following questions:
@@ -27,7 +28,9 @@ This code answers the following questions:
       This answers the accident trend during holidays. For this we have integrated holidays from years 2004-2020 available in dataset https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021?resource=download.
       We have filtered the crashes on holidays over the years 2004-2020 and compared the crash rate over holidays. Average Accidents count on holidays are plotted and compared against the annual daily average (from Results/accident_average.PNG). The results are found in Results/accident_holiday.PNG.
 
-2. Comparitive analysis between two cities
+
+II. Comparitive analysis between two cities :
+
 boulder_la_comparison.ipynb
 
 The similarities and differences between the Boulder county and Los Angeles counties with respect to crashes are analysed.
