@@ -148,13 +148,13 @@ The code answers the following questions
    
    **3. Which vehicle category is involved in most accidents?**
    
-   **4. Cluster analysis of geolocation **
+   **4. Cluster analysis of geolocation**
    
-   **5. What are the frequent patterns in accidents involving injuries? **
+   **5. What are the frequent patterns in accidents involving injuries?**
    
-   **6. What are the frequent patterns in bicycle related accidents? **
+   **6. What are the frequent patterns in bicycle related accidents?**
    
-   **7. What are the frequent patterns in pedestrian related accidents? **
+   **7. What are the frequent patterns in pedestrian related accidents?**
    
 ### V. Visualisation tool with marker clustering
 
