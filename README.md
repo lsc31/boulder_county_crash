@@ -28,6 +28,22 @@ This code answers the following questions:
       This answers the accident trend during holidays. For this we have integrated holidays from years 2004-2020 available in dataset https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021?resource=download.
       We have filtered the crashes on holidays over the years 2004-2020 and compared the crash rate over holidays. Average Accidents count on holidays are plotted and compared against the annual daily average (from Results/accident_average.PNG). The results are found in Results/accident_holiday.PNG.
 
+The code in this file answers the following questions:
+Initial_analysis_DM.ipynb
+
+  7.	Which are the most violations causing the accidents ?
+      We have selected top 20 violations causing the accidents and are plotted on the graph against the no. of accidents.
+      The result can be observed in the file Results/vio_code.png.
+      
+  8.	Where and at what time is it unsafe for pedestrians? 
+      We have plotted different cities with no.of pedestrian accidents on the bar graph.      
+      The result can be observed in the file Results/city_accident.png.
+      We have also plotted the time at which pedestrian accidents happen on the bar graph.
+      The result can be observed in the file Results/unsafe_pedestrian_hour.PNG.
+      
+  9. Factors causing the accidents?
+     Major factors that are causing accidents are plotted on the bar graph against the no. of accidents.
+     The result can be observed in the file Results/factors.png.
 
 II. Comparitive analysis between two cities :
 
@@ -71,6 +87,34 @@ Following comparisons are performed:
       Similarly, the X features for LA county ["Temperature(F)","Hour","City","Start_Lat","Start_Lng","Humidity(%)","Pressure(in)","Visibility(mi)","Weather_Condition","Junction","Sunrise_Sunset","Traffic_Signal","Crossing","Severity"]
       are trained against Y feature Severity indicating the severity of the traffic impact. see the results in Results/feature_imp_la.png.
       Heatmaps for the two counties are plotted to understand which features are highly correlated. (Results/heatmap_bo.png and Results/heatmap_la.png)
+
+
+III. Geo-spatial analysis of accident data in Boulder county  :
+Accident_Analysis_on_GMaps.ipynb
+1. Which street has highest accidents in Boulder county?
+    We have plotted accident data on the map of Boulder county. It displays the street where accidents have happened.
+    Results: Results/accidents_streets.png
+    
+2. Which street has highest no. of pedestrian accidents?
+We have plotted pedestrian accident data on the map of Boulder county. It displays the street where pedestrian accidents have happened.
+    Results: Results/pedestrian_accidents.png
+    
+3.Which street has highest no. of bicycle accidents?
+We have plotted bicycle accident data on the map of Boulder county. It displays the street where bicycle accidents have happened.
+    Results: Results/bicycle_accidents.png
+
+4. Severity Analysis of Accidents 
+We have plotted accident data with each point having color based on the category of severity. There are three categories Property damage only, injured and fatal. 
+Results: severity_analysis.png
+
+5.Fatality Analysis on Boulder County
+We have plotted fatal accident data where each point has color assigned based on the no. of fatalities it caused.
+Results: fatality_analysis.png
+
+6. Accidents on corridor of Boulder county
+We plotted accident data that happened on the corriders of the Boulder county. Each data point has different color based on the corridor.
+Results: accidents_corridors.png
+  
 
 
 
