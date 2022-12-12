@@ -1,7 +1,7 @@
 # Boulder county vehicle crash analysis
 
 This repository has the data analysis on Boulder county vehicle crashes from the Colorado Department of Transportation(CDOT) dataset https://opendata-bouldercounty.hub.arcgis.com/datasets/bouldercounty::crashes/about.
-This project contains two python notebook files for initial analysis where we look into the initial trend analysis of the data, comaparitive analysis between Boulder county data and 
+This project contains python notebook files for initial analysis where we look into the initial trend analysis of the data, Geo-spatial analysis with the help of maps, comparative analysis between Boulder county data and 
 LA county data from https://www.kaggle.com/dsv/3286750 to get insights on the accident trends in two cities of different population and weather features.
 The results are saved in the directory Results.
 
@@ -35,7 +35,7 @@ Initial_analysis_DM.ipynb
 
   **7.	Which are the most violations causing the accidents ?**
   
-We have selected top 20 violations causing the accidents and are plotted on the graph against the no. of accidents.
+We have selected top 20 violations causing the accidents and are plotted on the graph against the number of accidents.
 The result can be observed in the file Results/vio_code.png.
       
   **8.	Where and at what time is it unsafe for pedestrians?**
@@ -50,7 +50,42 @@ We have also plotted the time at which pedestrian accidents happen on the bar gr
 Major factors that are causing accidents are plotted on the bar graph against the no. of accidents.
      The result can be observed in the file Results/factors.png.
 
-### II. Comparitive analysis between two cities :
+
+### II. Geo-spatial analysis of accident data in Boulder county  :
+Accident_Analysis_on_GMaps.ipynb
+
+**1. Which street has highest accidents in Boulder county?**
+
+We have plotted accident data on the map of Boulder county. It displays the street where accidents have happened.
+    Results: Results/accidents_streets.png
+    
+**2. Which street has highest no. of pedestrian accidents?**
+
+We have plotted pedestrian accident data on the map of Boulder county. It displays the street where pedestrian accidents have happened.
+    Results: Results/pedestrian_accidents.png
+    
+**3.Which street has highest number of bicycle accidents?**
+
+We have plotted bicycle accident data on the map of Boulder county. It displays the street where bicycle accidents have happened.
+    Results: Results/bicycle_accidents.png
+
+**4. Severity Analysis of Accidents**
+
+We have plotted accident data with each point having color based on the category of severity. There are three categories Property damage only, injured and fatal. 
+Results: severity_analysis.png
+
+**5.Fatality Analysis on Boulder County**
+
+We have plotted fatal accident data where each point has color assigned based on the number of fatalities it caused.
+Results: fatality_analysis.png
+
+**6. Accidents on corridor of Boulder county**
+
+We plotted accident data that happened on the corriders of the Boulder county. Each data point has different color based on the corridor.
+Results: accidents_corridors.png
+
+
+### III. Comparative analysis between two cities :
 
 boulder_la_comparison.ipynb
 
@@ -100,39 +135,6 @@ Random Forest Regressor from scikit-learn is used to determine feature importanc
       are trained against Y feature Severity indicating the severity of the traffic impact. see the results in Results/feature_imp_la.png.
       Heatmaps for the two counties are plotted to understand which features are highly correlated. (Results/heatmap_bo.png and Results/heatmap_la.png)
 
-
-### III. Geo-spatial analysis of accident data in Boulder county  :
-Accident_Analysis_on_GMaps.ipynb
-
-**1. Which street has highest accidents in Boulder county?**
-
-We have plotted accident data on the map of Boulder county. It displays the street where accidents have happened.
-    Results: Results/accidents_streets.png
-    
-**2. Which street has highest no. of pedestrian accidents?**
-
-We have plotted pedestrian accident data on the map of Boulder county. It displays the street where pedestrian accidents have happened.
-    Results: Results/pedestrian_accidents.png
-    
-**3.Which street has highest no. of bicycle accidents?**
-
-We have plotted bicycle accident data on the map of Boulder county. It displays the street where bicycle accidents have happened.
-    Results: Results/bicycle_accidents.png
-
-**4. Severity Analysis of Accidents**
-
-We have plotted accident data with each point having color based on the category of severity. There are three categories Property damage only, injured and fatal. 
-Results: severity_analysis.png
-
-**5.Fatality Analysis on Boulder County**
-
-We have plotted fatal accident data where each point has color assigned based on the no. of fatalities it caused.
-Results: fatality_analysis.png
-
-**6. Accidents on corridor of Boulder county**
-
-We plotted accident data that happened on the corriders of the Boulder county. Each data point has different color based on the corridor.
-Results: accidents_corridors.png
   
 
 
