@@ -144,17 +144,32 @@ The code answers the following questions
  
    **1. Under what weather conditions do accidents occur? (Lighting, weather, road condition-icy, snow)**
    
+A correlation heatmap is produced using seaborn to find the correlation between road condition and lighting condition. The results can be seen in Results/lighting_road.png
+   
    **2. Is there any correlation between different traffic infrastructure (road type- roundabout, intersection) and frequency of accidents?**
+   
+A correlation heatmap is produced using seaborn to find the correlation between road description and road contour. The results can be seen in Results/road_desc_conour_corelation.png
    
    **3. Which vehicle category is involved in most accidents?**
    
+The vehicle categories are plotted against the respective number of accidents they are involved in. The respective results can be seen in Results/vehicle_type_accidents.png
+   
    **4. Cluster analysis of geolocation**
+   
+Elbow method has been used to determine the ideal number of clusters as seen in Results/kmeans_1.png
+KMeans clustering is performed and results are displayed in Results/kmeans_2.png and Results/kmeans_cluster.png
    
    **5. What are the frequent patterns in accidents involving injuries?**
    
+Apriori algo has been used to perform association rule mining and results for frequent itemsets can be seen in Results/accidents_injuries_arm_2.png and association rules can be seen in Results/accidents_injuries_arm.png
+   
    **6. What are the frequent patterns in bicycle related accidents?**
    
+Apriori algo has been used to perform association rule mining and results for frequent itemsets can be seen in Results/bicycle_arm_2.png and association rules can be seen in Results/bicycle_injuries_arm.png
+   
    **7. What are the frequent patterns in pedestrian related accidents?**
+   
+Apriori algo has been used to perform association rule mining and results for frequent itemsets can be seen in Results/ped_arm_2.png and association rules can be seen in Results/ped_injuries_arm.png
    
 ### V. Visualisation tool with marker clustering
 
