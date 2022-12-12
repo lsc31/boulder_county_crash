@@ -134,6 +134,32 @@ Random Forest Regressor from scikit-learn is used to determine feature importanc
       Similarly, the X features for LA county ["Temperature(F)","Hour","City","Start_Lat","Start_Lng","Humidity(%)","Pressure(in)","Visibility(mi)","Weather_Condition","Junction","Sunrise_Sunset","Traffic_Signal","Crossing","Severity"]
       are trained against Y feature Severity indicating the severity of the traffic impact. see the results in Results/feature_imp_la.png.
       Heatmaps for the two counties are plotted to understand which features are highly correlated. (Results/heatmap_bo.png and Results/heatmap_la.png)
+      
+      
+### IV. Corelation and Association Rule Mining Analysis 
+
+Boulder_Correlation_Apriori.ipynb
+
+The code answers the following questions 
+ 
+   **1. Under what weather conditions do accidents occur? (Lighting, weather, road condition-icy, snow) 
+   
+   **2. Is there any correlation between different traffic infrastructure (road type- roundabout, intersection) and frequency of accidents? 
+   
+   **3. Which vehicle category is involved in most accidents?
+   
+   **4. Cluster analysis of geolocation 
+   
+   **5. What are the frequent patterns in accidents involving injuries? 
+   
+   **6. What are the frequent patterns in bicycle related accidents? 
+   
+   **7. What are the frequent patterns in pedestrian related accidents? 
+   
+### V. Visualisation tool with marker clustering
+
+Boulder_crash_viz_tool -> crash_map.html : vehicle crashes
+Boulder_crash_viz_tool -> bicycle_crash.html : bicycle crashes
 
   
 
